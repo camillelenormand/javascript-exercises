@@ -187,7 +187,7 @@ const ARN1 = "CCGUCGUUGCGCUACAGC";
 const ARN2 = "CCUCGCCGGUACUUCUCG";
 
 
-function translate(ARN) {
+const translate = (ARN) => {
   const codons = ARN.match(/.{1,3}/g);
   let protein = "";
   const aminoAcids = {
