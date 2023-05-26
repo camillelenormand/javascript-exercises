@@ -2,7 +2,8 @@
 
 // Chatbot
 
-document.body.style.background = "black";
+document.body.style.background = "rgb(238,174,202)";
+document.body.style.background = "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)";
 document.body.style.color = "white";
 document.body.style.fontFamily = "monospace";
 document.body.style.fontSize = "1.5rem";
@@ -17,7 +18,7 @@ const input = document.createElement("input");
 const button = document.createElement("button");
 
 
-input.style.width = "50%";
+input.style.width = "40%";
 input.style.height = "2rem";
 input.style.fontSize = "1.5rem";
 input.style.borderRadius = "0.5rem";
@@ -30,7 +31,7 @@ input.style.textAlign = "center";
 input.style.fontFamily = "monospace";
 
 
-button.style.width = "50%";
+button.style.width = "20%";
 button.style.height = "3rem";
 button.style.fontSize = "2rem";
 button.style.borderRadius = "0.5rem";
@@ -72,6 +73,8 @@ document.body.append(input, button);
 
 let question = input.value;
 let answer = document.createElement("p");
+answer.placeholder = "Bot's answer";
+answer.readOnly = true;
 document.body.append(answer);
 
 answer.style.fontSize = "1.5rem";
@@ -80,9 +83,12 @@ answer.style.margin = "1rem auto";
 answer.style.width = "50%";
 answer.style.textAlign = "center";
 answer.style.borderRadius = "0.5rem";
-answer.style.padding = "0.5rem";
-answer.style.backgroundColor = "black";
-answer.style.color = "white";
+answer.style.padding = "3rem";
+answer.style.backgroundColor = "white";
+answer.style.color = "black";
+answer.style.transition = "all 0.3s ease-in-out";
+answer.style.fontWeight = "bold";
+
 
 
 button.addEventListener("click", () => {
