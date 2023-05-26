@@ -108,25 +108,3 @@ button.addEventListener("click", () => {
 });
 
 
-
-
-
-// let question = prompt("Hello, I am your chatbot. Ask me a question!");
-
-
-
-// while (true) {
-//   let question = prompt("Hello, I am your chatbot. Ask me a question!");
-
-//   if (question.endsWith("?")) {
-//     console.log("Yeah, sure...");
-//   } else if (!question) {
-//     console.log("Are you okay?");
-//   } else if (question === question.toUpperCase()) {
-//     console.log("Calm down...");
-//   } else if (question.includes("Fortnite")) {
-//     console.log("Do you want to play Fortnite with me?");
-//   } else {
-//     console.log("I don't understand...");
-//   }
-// }
